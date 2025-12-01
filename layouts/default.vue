@@ -5,7 +5,7 @@
       <slot />
     </main>
     
-    <AppFooter v-if="$route.path !== '/login'" />
+    <AppFooter v-if="$route.path !== '/account/login'" />
     
     <div class="fixed bottom-4 left-4 z-[90] md:hidden">
        <div class="bg-white border border-gray-200 shadow-xl px-6 py-3 flex items-center gap-4 cursor-pointer">

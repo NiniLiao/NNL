@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
-  ssr: false, // Force SPA mode to prevent 404s and hydration errors on Windows
+  ssr: false,
   modules: [
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
