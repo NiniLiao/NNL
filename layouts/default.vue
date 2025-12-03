@@ -1,3 +1,11 @@
+<script setup>
+import { useRoute } from 'vue-router'
+import AppHeader from '~/components/AppHeader.vue'
+import AppFooter from '~/components/AppFooter.vue'
+
+const route = useRoute()
+</script>
+
 <template>
   <div class="min-h-screen flex flex-col font-sans text-primary overflow-x-hidden relative">
     <AppHeader />
@@ -5,7 +13,7 @@
       <slot />
     </main>
     
-    <AppFooter v-if="$route.path !== '/account/login'" />
+    <AppFooter v-if="route?.path && !['/account/login', '/account/register'].includes(route.path)" />
     
     <div class="fixed bottom-4 left-4 z-[90] md:hidden">
        <div class="bg-white border border-gray-200 shadow-xl px-6 py-3 flex items-center gap-4 cursor-pointer">

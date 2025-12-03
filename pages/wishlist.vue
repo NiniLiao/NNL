@@ -1,3 +1,4 @@
+<script setup></script>
 <template>
   <div class="flex flex-col items-center justify-center min-h-screen w-full px-4 pt-40 pb-20">
     <h1 class="text-4xl md:text-5xl font-serif text-black mb-4">Wishlist</h1>

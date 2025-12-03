@@ -1,3 +1,9 @@
+<script setup>
+defineProps({
+  product: Object
+})
+</script>
+
 <template>
   <div class="group cursor-pointer flex flex-col gap-3">
     <div class="relative aspect-[3/4.2] overflow-hidden bg-gray-100">
@@ -12,4 +18,3 @@
     </div>
   </div>
 </template>
-<script setup>defineProps({ product: Object })</script>

@@ -1,3 +1,12 @@
+<script setup>
+import { ref } from 'vue'
+import ProductCard from '~/components/ProductCard.vue'
+import HeroSection from '~/components/HeroSection.vue'
+
+const justInProducts = ref([{ id: 1, name: 'Rosie Lapel Tweed Cinched Dress', designer: 'Paulus Erasmus', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&q=80' }, { id: 2, name: 'Star Straight Leg Jeans', designer: 'Angelo Lapiccirella', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&q=80', colors: '4' }, { id: 3, name: 'Monroe Silver Back Pocket Jeans', designer: 'Anna Pang', image: 'https://images.unsplash.com/photo-1584370848010-d7cc637703ef?w=800&q=80', colors: '2' }, { id: 4, name: 'Eleanor Ombre Sleeveless Vest', designer: 'Elvira Gasanova', image: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=800&q=80' }])
+const moreProducts = ref([{ id: 5, name: 'Oiled Leather Shoulder Bag', designer: 'Sophie Jousse', image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800&q=80', tag: 'New' }, { id: 6, name: 'Cropped Tweed Jacket', designer: 'Alex Rotin', image: 'https://images.unsplash.com/photo-1548624149-f321f654b681?w=800&q=80' }, { id: 7, name: 'Cashmere Scarf', designer: 'Soft Touch', image: 'https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?w=800&q=80' }, { id: 8, name: 'Structured Handbag', designer: 'Sophie Jousse', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&q=80' }])
+</script>
+
 <template>
   <div>
     <HeroSection />
@@ -14,8 +23,3 @@
     </section>
   </div>
 </template>
-<script setup>
-import { ref } from 'vue'
-const justInProducts = ref([{ id: 1, name: 'Rosie Lapel Tweed Cinched Dress', designer: 'Paulus Erasmus', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&q=80' }, { id: 2, name: 'Star Straight Leg Jeans', designer: 'Angelo Lapiccirella', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&q=80', colors: '4' }, { id: 3, name: 'Monroe Silver Back Pocket Jeans', designer: 'Anna Pang', image: 'https://images.unsplash.com/photo-1584370848010-d7cc637703ef?w=800&q=80', colors: '2' }, { id: 4, name: 'Eleanor Ombre Sleeveless Vest', designer: 'Elvira Gasanova', image: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=800&q=80' }])
-const moreProducts = ref([{ id: 5, name: 'Oiled Leather Shoulder Bag', designer: 'Sophie Jousse', image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800&q=80', tag: 'New' }, { id: 6, name: 'Cropped Tweed Jacket', designer: 'Alex Rotin', image: 'https://images.unsplash.com/photo-1548624149-f321f654b681?w=800&q=80' }, { id: 7, name: 'Cashmere Scarf', designer: 'Soft Touch', image: 'https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?w=800&q=80' }, { id: 8, name: 'Structured Handbag', designer: 'Sophie Jousse', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&q=80' }])
-</script>

@@ -1,5 +1,5 @@
 {
-  "name": "nnl-v33-login-update",
+  "name": "nnl-v51-final",
   "private": true,
   "scripts": {
     "build": "nuxt build",

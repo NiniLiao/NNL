@@ -1,3 +1,9 @@
+<script setup>
+import { ref } from 'vue'
+import AppFooter from '~/components/AppFooter.vue'
+const showPassword = ref(false)
+</script>
+
 <template>
   <div class="w-full relative bg-white">
     <div class="relative w-full h-[90vh] bg-black">
@@ -19,7 +25,7 @@
                  <button type="submit" class="w-full bg-white text-black py-3 text-sm font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors mt-6">Sign in</button>
               </form>
               <div class="my-8 text-xs text-white/60">Don't have an account?</div>
-              <button class="w-full border border-white text-white py-3 text-sm font-medium hover:bg-white hover:text-black transition-colors mb-8 uppercase tracking-widest">Create Account</button>
+              <NuxtLink to="/account/register" class="block w-full border border-white text-white py-3 text-sm font-medium hover:bg-white hover:text-black transition-colors mb-8 uppercase tracking-widest text-center">Create Account</NuxtLink>
               <div class="flex items-center gap-4 mb-8"><div class="h-[1px] bg-white/30 flex-grow"></div><span class="text-xs text-white/50 uppercase tracking-widest">OR</span><div class="h-[1px] bg-white/30 flex-grow"></div></div>
               <div class="flex justify-center gap-4">
                  <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:opacity-90 transform hover:scale-105 transition-transform"><img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5 h-5" /></button>
@@ -39,7 +45,3 @@
     <AppFooter :show-media="false" :show-badges="false" />
   </div>
 </template>
-<script setup>
-import { ref } from 'vue'
-const showPassword = ref(false)
-</script>
