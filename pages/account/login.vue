@@ -42,6 +42,8 @@ const showPassword = ref(false)
           <div><div class="flex justify-center mb-6"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg></div><h4 class="text-xs font-bold uppercase tracking-widest mb-3 text-black">Loyalty Rewards</h4><p class="text-[10px] text-gray-500 leading-relaxed max-w-xs mx-auto">Join NNL Rewards and enjoy points, perks, and private designer access.</p></div>
        </div>
     </div>
+    
     <AppFooter :show-media="false" :show-badges="false" />
   </div>
 </template>
+<style scoped></style>
