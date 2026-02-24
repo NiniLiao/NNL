@@ -118,4 +118,8 @@ npm run generate # for static hosting
 - SPA Configuration: This project is set to ssr: false in nuxt.config.ts to prevent hydration mismatches and simplify deployment on static hosting services (like GitHub Pages or Vercel Static).
 - Clean Install: If you encounter any issues, try deleting node_modules and .nuxt folder and run npm install again.
 
+<<<<<<< HEAD
 © 2025 NNL Clone. All Rights Reserved.
+=======
+© 2025 NNL Clone. All Rights Reserved.
+>>>>>>> 8204e3b151168aa191609d72f4b925463792ecb2
